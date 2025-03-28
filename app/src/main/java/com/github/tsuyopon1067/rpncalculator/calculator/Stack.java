@@ -41,6 +41,7 @@ public class Stack<T> {
         return res;
     }
 
+    @SuppressWarnings("unchecked")
     public T peek() {
         if (isEmpty()) {
             throw new EmptyStackException();
