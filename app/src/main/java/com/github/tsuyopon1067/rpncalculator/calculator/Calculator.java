@@ -21,7 +21,7 @@ public class Calculator {
             }
         }
         Token result = stack.pop();
-        if (result instanceof NumberToken) {
+        if (result instanceof NumberToken && stack.isEmpty()) {
             return new Result((NumberToken)result);
         }
         return new Result();
