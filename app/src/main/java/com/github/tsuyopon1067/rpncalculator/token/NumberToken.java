@@ -3,7 +3,7 @@ package com.github.tsuyopon1067.rpncalculator.token;
 public class NumberToken implements Token {
     private double value;
 
-    NumberToken(double value) {
+    public NumberToken(double value) {
         this.value = value;
     }
 
