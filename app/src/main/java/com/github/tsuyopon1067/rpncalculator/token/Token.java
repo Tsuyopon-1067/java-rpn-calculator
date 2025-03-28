@@ -1,5 +1,5 @@
 package com.github.tsuyopon1067.rpncalculator.token;
 
-interface Token {
+public interface Token {
     public String toString();
 }
