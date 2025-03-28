@@ -3,11 +3,11 @@ package com.github.tsuyopon1067.rpncalculator.calculator;
 import com.github.tsuyopon1067.rpncalculator.token.NumberToken;
 
 public class Result {
-    private double value;
+    private NumberToken token;
     private boolean isError;
 
     public Result(NumberToken token) {
-        this.value = token.getValue();
+        this.token = token;
         this.isError = false;
     }
     public Result() {
@@ -18,7 +18,7 @@ public class Result {
         return this.isError;
     }
 
-    public double getValue() {
-        return this.value;
+    public NumberToken getToken() {
+        return this.token;
     }
 }

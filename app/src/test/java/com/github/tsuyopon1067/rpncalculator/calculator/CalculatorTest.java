@@ -30,7 +30,7 @@ public class CalculatorTest {
         tokens.add(new NumberToken(2));
         tokens.add(new Add());
         Result result = calculator.calc(tokens);
-        assertEquals(3, result.getValue(), DELTA);
+        assertEquals(3, result.getToken().getValue(), DELTA);
         assertFalse(result.isError());
     }
 
@@ -45,7 +45,7 @@ public class CalculatorTest {
         tokens.add(new Add());
         tokens.add(new Add());
         Result result = calculator.calc(tokens);
-        assertEquals(10, result.getValue(), DELTA);
+        assertEquals(10, result.getToken().getValue(), DELTA);
         assertFalse(result.isError());
     }
 
@@ -56,7 +56,7 @@ public class CalculatorTest {
         tokens.add(new NumberToken(2));
         tokens.add(new Sub());
         Result result = calculator.calc(tokens);
-        assertEquals(-1, result.getValue(), DELTA);
+        assertEquals(-1, result.getToken().getValue(), DELTA);
         assertFalse(result.isError());
     }
 
@@ -67,7 +67,7 @@ public class CalculatorTest {
         tokens.add(new NumberToken(2));
         tokens.add(new Mult());
         Result result = calculator.calc(tokens);
-        assertEquals(22, result.getValue(), DELTA);
+        assertEquals(22, result.getToken().getValue(), DELTA);
         assertFalse(result.isError());
     }
 
@@ -78,7 +78,7 @@ public class CalculatorTest {
         tokens.add(new NumberToken(2));
         tokens.add(new Div());
         Result result = calculator.calc(tokens);
-        assertEquals(4, result.getValue(), DELTA);
+        assertEquals(4, result.getToken().getValue(), DELTA);
         assertFalse(result.isError());
     }
 
@@ -98,7 +98,7 @@ public class CalculatorTest {
         tokens.add(new Div());
         tokens.add(new Add());
         Result result = calculator.calc(tokens);
-        assertEquals(6, result.getValue(), DELTA);
+        assertEquals(6, result.getToken().getValue(), DELTA);
         assertFalse(result.isError());
     }
 }
