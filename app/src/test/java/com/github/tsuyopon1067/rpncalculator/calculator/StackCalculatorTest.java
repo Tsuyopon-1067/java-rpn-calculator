@@ -14,13 +14,13 @@ import static org.junit.jupiter.api.Assertions.*;
 
 import java.util.ArrayList;
 
-public class CalculatorTest {
-    private Calculator calculator;
+public class StackCalculatorTest {
+    private StackCalculator calculator;
     final double DELTA = 1.0e-10;
 
     @BeforeEach
     void setUp() {
-        calculator = new Calculator();
+        calculator = new StackCalculator();
     }
 
     @Test

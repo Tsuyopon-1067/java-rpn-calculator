@@ -6,9 +6,9 @@ import com.github.tsuyopon1067.rpncalculator.token.NumberToken;
 import com.github.tsuyopon1067.rpncalculator.token.Token;
 import com.github.tsuyopon1067.rpncalculator.token.operator.Operator;
 
-public class Calculator {
+public class StackCalculator {
     private Stack<Token> stack;
-    public Calculator() {
+    public StackCalculator() {
         this.stack = new Stack<Token>();
     }
 
