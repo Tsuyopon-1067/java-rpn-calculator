@@ -1,4 +1,4 @@
-package com.github.tsuyopon1067.tokenizer;
+package com.github.tsuyopon1067.rpncalculator.tokenizer;
 
 import java.util.ArrayList;
 import java.util.Arrays;
